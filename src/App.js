@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <div className={isActive? "Header Active" : "Header"}>
         <div className="Header-content">
-          <div className="Logo"></div>
+          <div className="Logo locked"></div>
           <div className="Menu">
             <button className="Menu__Button" onClick={ () => window.location.reload()}>ПЕЧАТЬ ФОТО</button>
             <button className="Menu__Button" onClick={ () => window.location.reload()}>ТОВАРЫ</button>
@@ -24,15 +24,15 @@ function App() {
       </div>
       <div className='Content'>
         <div className='Content-Main'>
-            <div className='Content-Main__Title'>СОХРАНЯЕМ <text className='Text_orange'>ВАШИ</text> ЯРКИЕ ЭМОЦИИ <br/> НА <div className='Text_orange'>ДОЛГИЕ ГОДЫ</div> !
+            <div className='Content-Main__Title locked'>СОХРАНЯЕМ <text className='Text_orange'>ВАШИ</text> ЯРКИЕ ЭМОЦИИ <br/> НА <div className='Text_orange'>ДОЛГИЕ ГОДЫ</div> !
             </div>
             <div className='Content-Buttons'>
               <button className='Content-Buttons_Button'>РАСПЕЧАТАТЬ ФОТО</button>
               <button className='Content-Buttons_Button Button2'>ДРУГИЕ УСЛУГИ</button>
             </div>
         </div>
-        <div className='Phones'></div>
-        <div className='Triangles'></div>
+        <div className='Phones locked'></div>
+        <div className='Triangles locked'></div>
       </div>
     </div>
   );
