@@ -1,17 +1,24 @@
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [isActive, setActive] = useState(false)
+
+  const handleToggle = () => {
+    setActive(!isActive)
+  }
   return (
     <div className="App">
-      <div className="Header">
+      <div className={isActive? "Header Active" : "Header"}>
         <div className="Header-content">
           <div className="Logo"></div>
           <div className="Menu">
-            <button className="Menu__Button">ПЕЧАТЬ ФОТО</button>
-            <button className="Menu__Button">ТОВАРЫ</button>
-            <button className="Menu__Button">УСЛУГИ</button>
-            <button className="Menu__Button">ОТЗЫВЫ</button>
-            <button className="Menu__Button">КОНТАКТЫ</button>
+            <button className="Menu__Button" onClick={ () => window.location.reload()}>ПЕЧАТЬ ФОТО</button>
+            <button className="Menu__Button" onClick={ () => window.location.reload()}>ТОВАРЫ</button>
+            <button className="Menu__Button" onClick={ () => window.location.reload()}>УСЛУГИ</button>
+            <button className="Menu__Button" onClick={ () => window.location.reload()}>ОТЗЫВЫ</button>
+            <button className="Menu__Button"  onClick={ () => handleToggle()}>КОНТАКТЫ</button>
           </div>
         </div>
       </div>
@@ -26,7 +33,6 @@ function App() {
         </div>
         <div className='Phones'></div>
         <div className='Triangles'></div>
-        
       </div>
     </div>
   );
