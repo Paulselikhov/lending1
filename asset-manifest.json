@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lending1/static/css/main.6865ccfd.css",
+    "main.js": "/lending1/static/js/main.904f6cb2.js",
+    "static/media/slidebg1.jpg": "/lending1/static/media/slidebg1.fc5ba5e832b93a44178b.jpg",
+    "static/media/phones1.png": "/lending1/static/media/phones1.c8ef41d168c1abd8a825.png",
+    "static/media/triangles.png": "/lending1/static/media/triangles.0fbeea7cacd0f9d3976a.png",
+    "index.html": "/lending1/index.html",
+    "main.6865ccfd.css.map": "/lending1/static/css/main.6865ccfd.css.map",
+    "main.904f6cb2.js.map": "/lending1/static/js/main.904f6cb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6865ccfd.css",
+    "static/js/main.904f6cb2.js"
+  ]
+}
